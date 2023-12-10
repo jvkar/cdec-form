@@ -1,0 +1,599 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
+
+
+
+@media screen and (min-width: 600px){
+body{ 
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat:repeat-y;
+    font-family: 'Dhurjati', sans-serif;
+    letter-spacing: 1px;
+    margin : 0;
+    padding : 0; 
+    box-sizing: border-box;
+    height: auto;
+
+}
+
+q{
+   font-size: 200%;
+}
+h1,h2{
+   font-size: 200%;
+}
+nav{
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     justify-content: space-between;
+     background-color: #000000d3;
+     align-items: center;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1000;
+
+
+}
+nav img{
+      margin: 10px 10px;
+}
+.button {
+     margin: 10px 10px;
+     background-color: #00ffff;
+     font-family: 'Dhurjati', sans-serif;
+     border:0.5px solid transparent;
+     padding: 2px 6px;
+     width: 178px;
+     height: 49px;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 25px;
+     transition-duration: 0.6s;
+     transition-property:background-color,color, border-color ;
+     font-size: 32px;
+ }
+.button:hover{ 
+     background-color: #000000;
+     color:#00ffff;
+     cursor: pointer;
+     border:0.5px solid #00ffff;
+ }
+
+.headers{ 
+    display: flex;
+    color: #00ffff;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15%;
+
+}
+.buttons{
+     display: flex;
+     flex-direction: row;
+}
+.sec-section
+{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 10% auto;
+  border: 0.6px solid #00ffff;
+  border-radius:25px;
+  padding: 5px 15%;
+}
+.sec-section h1 {
+   color:#00ffff;
+   font-size: 32px;
+}
+.sec-section h2{ 
+  color: white;
+  font-size: 16px;
+  text-align: center;
+
+}
+.third-section h1 { 
+   text-align: center;
+   color:#00ffff;
+   font-size: 32px;
+}
+.forth-section h1 { 
+  text-align: center;
+  color:#00ffff;
+  font-size: 32px;
+}
+.grid-departement{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   color: white;
+   gap: 20px;
+   text-align: center;
+  
+}
+.grid-item h1 {
+   font-size: 32px;
+}
+.card{
+   background-color: #000000ba;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   flex-direction: column;
+   margin: 3% auto;
+   width: 42%;
+   height: 10rem;
+   border: 0.7px solid #00ffff;
+   border-radius: 25px;
+   transition-duration: 0.6s;
+
+
+}
+.card:hover{ 
+  width:50% ;
+  height: 12rem;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+.card img{ 
+  height: 48px;
+  width: 48px;
+  background-color: rgb(0, 0, 0);
+  border:0.5px solid white;
+  border-radius: 50%;
+  padding: 5px;
+}
+.card h2{ 
+  font-size: 22px;
+}
+#gallery-container > .gallery {
+  white-space: nowrap;
+  font-size: 0;
+  transition: transform 0.3s ease;
+  overflow: auto;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+#gallery-container > .gallery >img {
+  width: 30%;
+  display: inline-block;
+  margin: 5px;
+  height: 35rem;
+}
+.scroll-right {
+  background-color: white;
+  height: 96px;
+  width: 96px;
+}
+.scroll-left{
+  background-color: white;
+  height: 96px;
+  width: 96px;
+}
+
+@keyframes sideClip {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+  }
+
+  50% {
+    clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+#gallery-container {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.contact-us { 
+  display: flex;
+  flex-direction: column;
+align-items: center;
+
+}
+.contact-us h1{ 
+  font-size: 32px;
+  color: white;
+}
+.contact a{ 
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+
+} 
+
+.contact {
+  color: white;
+  background-color: #000000;
+  width: 13%;
+  height: 3rem;
+  font-size: 7px;
+  border-radius: 25px;
+  border: 0px solid transparent;
+  font-family: 'Dhurjati', sans-serif;
+  margin: 5px 0;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer p 
+{
+  color: white;
+  font-size: 20px; 
+  text-align: center;
+}
+form
+{ 
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 10px auto;
+  color: #00ffff;
+  background-color: #0000008d;
+  padding: 10px 10px;
+  border: 0.5px solid #00ffff;
+  border-radius: 25px;
+  font-size: 32px;
+}
+form h1{text-align: center; }
+form input,textarea{ 
+  background-color: white;
+  border: 0px solid transparent;
+  border-radius: 10px;
+  margin: 5px 0 ;
+  padding: 0px 10px;
+  font-family: 'Dhurjati', sans-serif;
+  font-size: 22px;
+
+
+}
+form input:focus,textarea:focus{
+  outline: none;
+  border: 0.3px solid #00ffff;
+ }
+.formbutton
+ { 
+  background-color: white;
+  border: 0px solid transparent;
+  border-radius: 10px;
+   width: 20%;
+   transform: translateX(200%);
+   transition-duration: 0.6s;
+   font-family: 'Dhurjati', sans-serif;
+   transition-property:background-color,color, border-color ;
+   font-size: 25px;
+
+ }
+ .formbutton:hover{
+  background-color: #000000;
+  color:#00ffff;
+  cursor: pointer;
+  border:0.5px solid #00ffff;
+ 
+ }
+} 
+@media screen and (max-width: 600px){
+
+  body{ 
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat:repeat-y;
+    font-family: 'Dhurjati', sans-serif;
+    letter-spacing: 1px;
+    margin : 0;
+    padding : 0; 
+    box-sizing: border-box;
+    height: auto;
+
+}
+
+q{
+   font-size: 200%;
+}
+h1,h2{
+   font-size: 200%;
+}
+nav{
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     justify-content: space-between;
+     background-color: #000000d3;
+     align-items: center;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1000;
+
+
+}
+nav img{
+      margin: 10px 10px;
+}
+.button {
+     margin: 10px 10px;
+     background-color: #00ffff;
+     font-family: 'Dhurjati', sans-serif;
+     border:0.5px solid transparent;
+     padding: 2px 6px;
+     width: 140px;
+     height: 46px;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 25px;
+     transition-duration: 0.6s;
+     transition-property:background-color,color, border-color ;
+     font-size: 32px;
+ }
+.button:hover{ 
+     background-color: #000000;
+     color:#00ffff;
+     cursor: pointer;
+     border:0.5px solid #00ffff;
+ }
+
+.headers{ 
+    display: flex;
+    color: #00ffff;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40%;
+
+}
+.buttons{
+     display: flex;
+     flex-direction: row;
+}
+.sec-section
+{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 10% auto;
+  border: 0.6px solid #00ffff;
+  border-radius:25px;
+  padding: 5px 15%;
+}
+.sec-section h1 {
+   color:#00ffff;
+   font-size: 32px;
+}
+.sec-section h2{ 
+  color: white;
+  font-size: 23px;
+  text-align: center;
+
+}
+.third-section h1 { 
+   text-align: center;
+   color:#00ffff;
+   font-size: 32px;
+}
+.forth-section h1 { 
+  text-align: center;
+  color:#00ffff;
+  font-size: 32px;
+}
+.grid-departement{
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   color: white;
+   gap: 20px;
+   text-align: center;
+   height: 150vh;
+  
+}
+.grid-item h1 {
+   font-size: 32px;
+}
+.card{
+   background-color: #000000ba;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   flex-direction: column;
+   margin: 3% auto;
+   width: 76%;
+   height: 10rem;
+   border: 0.7px solid #00ffff;
+   border-radius: 25px;
+   transition-duration: 0.6s;
+
+
+}
+.card:hover{ 
+  width:50% ;
+  height: 12rem;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+.card img{ 
+  height: 48px;
+  width: 48px;
+  background-color: rgb(0, 0, 0);
+  border:0.5px solid white;
+  border-radius: 50%;
+  padding: 5px;
+}
+.card h2{ 
+  font-size: 22px;
+}
+#gallery-container > .gallery {
+  white-space: nowrap;
+  font-size: 0;
+  transition: transform 0.3s ease;
+  overflow: auto;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+#gallery-container > .gallery >img {
+  width: 87%;
+  display: inline-block;
+  margin: 5px;
+  height: 19rem;
+}
+.scroll-right {
+  background-color: white;
+  height: 96px;
+  width: 96px;
+}
+.scroll-left{
+  background-color: white;
+  height: 96px;
+  width: 96px;
+}
+
+@keyframes sideClip {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+  }
+
+  50% {
+    clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+#gallery-container {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.contact-us { 
+  display: flex;
+  flex-direction: column;
+align-items: center;
+
+}
+.contact-us h1{ 
+  font-size: 32px;
+  color: white;
+}
+.contact a{ 
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+
+} 
+
+.contact {
+  color: white;
+  background-color: #000000;
+  width: 13%;
+  height: 3rem;
+  font-size: 7px;
+  border-radius: 25px;
+  border: 0px solid transparent;
+  font-family: 'Dhurjati', sans-serif;
+  margin: 5px 0;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer p 
+{
+  color: white;
+  font-size: 20px; 
+  text-align: center;
+}
+form
+{ 
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 10px auto;
+  color: #00ffff;
+  background-color: #0000008d;
+  padding: 10px 10px;
+  border: 0.5px solid #00ffff;
+  border-radius: 25px;
+  font-size: 32px;
+}
+form h1{text-align: center; }
+form input,textarea{ 
+  background-color: white;
+  border: 0px solid transparent;
+  border-radius: 10px;
+  margin: 5px 0 ;
+  padding: 0px 10px;
+  font-family: 'Dhurjati', sans-serif;
+  font-size: 22px;
+
+
+}
+form input:focus,textarea:focus{
+  outline: none;
+  border: 0.3px solid #00ffff;
+ }
+.formbutton
+ { 
+  background-color: white;
+  border: 0px solid transparent;
+  border-radius: 10px;
+   width: 32%;
+   transform: translateX(120%);
+   transition-duration: 0.6s;
+   font-family: 'Dhurjati', sans-serif;
+   transition-property:background-color,color, border-color ;
+   font-size: 25px;
+
+ }
+ .formbutton:hover{
+  background-color: #000000;
+  color:#00ffff;
+  cursor: pointer;
+  border:0.5px solid #00ffff;
+ 
+ }
+}

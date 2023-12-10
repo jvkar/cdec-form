@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <form action="">
+    <h1>Registration</h1>
+    <label for="" >Full Name</label>
+    <input type="text" required class="input">
+    <label for="">Email</label>
+    <input type="email" name="email" id="email" required class="input">
+    <label for="">Phone number</label>
+    <input type="number" name="number" id="number" required class="input">
+    <label for="">major (speciality) with the year</label>
+    <input type="text">
+    <label for="">Why do you want to join CDEC?    </label>
+    <textarea name="CDEC" id="CDEC" cols="10" rows="5" required class="input"></textarea>
+    <button type="submit" id="btn" class="formbutton">submit</button>
+    <a href="index.html"><button type="button"  class="formbutton">Return</button></a>
+  
+   </form> 
+</body>
+<script>
+const btn = document.getElementById('btn');
+const input = document.querySelector('.input');
+
+btn.addEventListener('click', () => {
+    if (input.value.trim().length > 0) {
+        alert("Submit successfully");
+    } else {
+        alert("Please enter a value in the input field");
+    }
+});
+</script>
+</html>
